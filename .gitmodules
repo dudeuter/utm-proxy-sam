@@ -1,0 +1,3 @@
+[submodule "utm-student-feedback"]
+	path = utm-student-feedback
+	url = https://github.com/Uteach-me/utm-student-feedback.git

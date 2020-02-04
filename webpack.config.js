@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader', options: { presets: ['@babel/preset-env', '@babel/preset-react'] },
+        test: /\.jsx?$/, exclude: /node_modules\/(?!(utm-student-feedback)\/).*/, loader: 'babel-loader', options: { presets: ['@babel/preset-env', '@babel/preset-react'] },
       },
     ],
   },

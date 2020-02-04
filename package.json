@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "utm-student-feedback": "github:Uteach-me/utm-student-feedback"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",

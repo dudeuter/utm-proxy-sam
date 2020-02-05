@@ -14,6 +14,7 @@
     "morgan": "^1.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "request": "^2.88.0",
     "utm-student-feedback": "github:Uteach-me/utm-student-feedback"
   },
   "devDependencies": {

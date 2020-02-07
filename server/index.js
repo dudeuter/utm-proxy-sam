@@ -5,8 +5,11 @@ const request = require('request');
 const url = require('url');
 
 const Feedback = 'http://localhost:3001/';
+const FeedbackBundle = 'https://utm-proxy-assets.s3-us-west-1.amazonaws.com/feedback/bundle.js';
 const CourseOverview = 'http://localhost:3003/';
+const CourseOverviewBundle = 'https://utm-proxy-assets.s3-us-west-1.amazonaws.com/overview/bundle.js';
 const Checkout = 'http://localhost:3007/';
+const CheckoutBundle = 'https://utm-proxy-assets.s3-us-west-1.amazonaws.com/checkout/bundle.js';
 
 const app = express();
 const PORT = 3000;
@@ -18,7 +21,9 @@ app.use(express.static('dist'));
 app.get('/Feedback.js', (req, res) => {
   request({
     method: 'GET',
-    url: url.resolve(Feedback, 'bundle.js'),
+    // url: url.resolve(Feedback, 'bundle.js'),
+    url: FeedbackBundle,
+
   }, (error, response) => {
     if (error) {
       res.statusCode = 500;
@@ -36,7 +41,9 @@ app.get('/Feedback.js', (req, res) => {
 app.get('/Checkout.js', (req, res) => {
   request({
     method: 'GET',
-    url: url.resolve(Checkout, 'bundle.js'),
+    // url: url.resolve(Checkout, 'bundle.js'),
+    url: CheckoutBundle,
+
   }, (error, response) => {
     if (error) {
       res.statusCode = 500;
@@ -54,7 +61,8 @@ app.get('/Checkout.js', (req, res) => {
 app.get('/Overview.js', (req, res) => {
   request({
     method: 'GET',
-    url: url.resolve(CourseOverview, 'bundle.js'),
+    // url: url.resolve(CourseOverview, 'bundle.js'),
+    url: CourseOverviewBundle,
   }, (error, response) => {
     if (error) {
       res.statusCode = 500;

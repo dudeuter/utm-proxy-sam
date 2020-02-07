@@ -6,7 +6,7 @@ const url = require('url');
 
 const Feedback = 'http://localhost:3001/';
 const FeedbackBundle = 'https://utm-proxy-assets.s3-us-west-1.amazonaws.com/feedback/bundle.js';
-const CourseOverview = 'http://localhost:3003/';
+const CourseOverview = 'http://localhost:3011/';
 const CourseOverviewBundle = 'https://utm-proxy-assets.s3-us-west-1.amazonaws.com/overview/bundle.js';
 const Checkout = 'http://localhost:3007/';
 const CheckoutBundle = 'https://utm-proxy-assets.s3-us-west-1.amazonaws.com/checkout/bundle.js';
